@@ -34,7 +34,7 @@ function addItem() {
 }
 
 function deleteItem() {
-    items.splice(deleteItemBox.value, 1); 
+    items.splice(deleteItemBox.value-1, 1); 
     deleteItemBox.value = ""; 
     display(); 
 }
