@@ -15,8 +15,31 @@
         <h3>SHOP LIFT UP INC.</h3>
         <img id="logo" src="logo.png">
     </div>
-    <div id="list">
-
+    <div id="controls">
+        <div id="add">
+            <input placeholder="Type an item here" type="text" id="itemsel" />
+            <button onclick="addItem();" id="addButton">+ ADD ITEM</button>
+        </div>
+        <div id="delete">
+            <input placeholder="Type the number of the item here" type="text" id="indexsel" />
+            <button onclick="deleteItem();" id="deleteButton">- DELETE ITEM</button>
+        </div>
+        <div id="move">
+            <input placeholder="Type the number of the item here" type="text" id="movesel" />
+            <br />
+            <button onclick="moveUp();" id="up">↑ MOVE UP</button>
+            <button onclick="moveDown();" id="down">↓ MOVE DOWN</button>
+        </div>
+    </div>
+    <div id="list-div">
+        <table id="list">
+            <tr>
+                <th id="listheader"></th>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
